@@ -1,0 +1,28 @@
+{
+  "name": "playwright-automation-framework",
+  "version": "1.0.0",
+  "description": "Playwright Framework — Web + API | POM | QA & Staging Environments",
+  "scripts": {
+    "test:qa:web": "cross-env ENV=qa npx playwright test tests/web --reporter=html",
+    "test:qa:api": "cross-env ENV=qa npx playwright test tests/api --reporter=html",
+    "test:qa:all": "cross-env ENV=qa npx playwright test --reporter=html",
+    "test:stage:web": "cross-env ENV=stage npx playwright test tests/web --reporter=html",
+    "test:stage:api": "cross-env ENV=stage npx playwright test tests/api --reporter=html",
+    "test:stage:all": "cross-env ENV=stage npx playwright test --reporter=html",
+    "test:smoke": "cross-env ENV=qa npx playwright test --grep @smoke --reporter=html",
+    "test:regression": "cross-env ENV=stage npx playwright test --grep @regression --reporter=html",
+    "test:headed": "cross-env ENV=qa npx playwright test tests/web --headed",
+    "report": "npx playwright show-report reports/html-report",
+    "codegen": "npx playwright codegen"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^20.14.2"
+  }
+}

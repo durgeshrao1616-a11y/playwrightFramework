@@ -1,0 +1,30 @@
+{
+  "qa": [
+    {
+      "testCase":  "apply_annual_leave",
+      "leaveType": "CAN - Bereavement",
+      "fromDate":  "2026-03-20",
+      "toDate":    "2026-03-22",
+      "comment":   "QA team outing",
+      "expected":  "Successfully Saved"
+    },
+    {
+      "testCase":  "apply_casual_leave",
+      "leaveType": "CAN - Bereavement",
+      "fromDate":  "2026-04-01",
+      "toDate":    "2026-04-01",
+      "comment":   "Personal work",
+      "expected":  "Successfully Saved"
+    }
+  ],
+  "stage": [
+    {
+      "testCase":  "apply_annual_leave",
+      "leaveType": "Annual Leave",
+      "fromDate":  "2026-03-25",
+      "toDate":    "2026-03-27",
+      "comment":   "Staging test leave",
+      "expected":  "Successfully Saved"
+    }
+  ]
+}

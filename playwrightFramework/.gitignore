@@ -1,0 +1,7 @@
+node_modules/
+dist/
+reports/
+test-results/
+*.log
+qa.json
+qa.meta.json

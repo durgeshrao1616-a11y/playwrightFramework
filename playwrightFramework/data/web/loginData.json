@@ -1,0 +1,36 @@
+{
+  "qa": {
+    "validUser": {
+      "username": "Admin",
+      "password": "admin123",
+      "expectedUrl": "/dashboard"
+    },
+    "invalidUser": {
+      "username": "wrong_user",
+      "password": "wrong_pass",
+      "expectedError": "Invalid credentials"
+    },
+    "emptyUser": {
+      "username": "",
+      "password": "",
+      "expectedError": "Required"
+    }
+  },
+  "stage": {
+    "validUser": {
+      "username": "stage_admin",
+      "password": "stage_pass123",
+      "expectedUrl": "/dashboard"
+    },
+    "invalidUser": {
+      "username": "bad_user",
+      "password": "bad_pass",
+      "expectedError": "Invalid credentials"
+    },
+    "emptyUser": {
+      "username": "",
+      "password": "",
+      "expectedError": "Required"
+    }
+  }
+}

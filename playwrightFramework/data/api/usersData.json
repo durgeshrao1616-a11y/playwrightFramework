@@ -1,0 +1,46 @@
+{
+  "qa": {
+    "createUser": {
+      "userName":   "testuser_qa",
+      "password":   "Test@1234",
+      "status":     "Enabled",
+      "userRoleId": 2,
+      "empNumber":  1
+    },
+    "endpoints": {
+      "users":     "/users",
+      "employees": "/employees",
+      "leave":     "/leave/leaveRequests"
+    },
+    "expectedStatusCodes": {
+      "getAll":    200,
+      "create":    200,
+      "update":    200,
+      "delete":    200,
+      "notFound":  404,
+      "unauth":    401
+    }
+  },
+  "stage": {
+    "createUser": {
+      "userName":   "testuser_stage",
+      "password":   "Stage@1234",
+      "status":     "Enabled",
+      "userRoleId": 2,
+      "empNumber":  1
+    },
+    "endpoints": {
+      "users":     "/users",
+      "employees": "/employees",
+      "leave":     "/leave/leaveRequests"
+    },
+    "expectedStatusCodes": {
+      "getAll":    200,
+      "create":    200,
+      "update":    200,
+      "delete":    200,
+      "notFound":  404,
+      "unauth":    401
+    }
+  }
+}
