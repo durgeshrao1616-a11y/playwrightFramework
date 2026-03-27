@@ -31,8 +31,8 @@ console.log(`AUTH EXISTS: ${fs.existsSync(authFile)}`);
 export default defineConfig({
 
   // ✅ Test discovery
-  //testDir:   './tests',
-  //testMatch: ['**/*.spec.ts', '**/*.test.ts'],
+  testDir:   './tests',
+  testMatch: ['**/*.spec.ts', '**/*.test.ts'],
 
   fullyParallel: true,
   workers:       5,
