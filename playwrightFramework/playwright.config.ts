@@ -46,7 +46,7 @@ export default defineConfig({
   // ✅ Reporter
   reporter: [
     ['html', { outputFolder: 'reports/html-report', open: 'never' }],
-    ['list'],
+    ['allure-playwright'],
   ],
 
   outputDir: 'reports/test-results',

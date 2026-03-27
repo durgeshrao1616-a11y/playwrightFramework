@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","20990","Upload Resume and Download Profile","chromium-qa","2026-03-27","passed","2026-03-27","Dashboard — Recruitment Resume Upload and Profile Download ","web\dashboard.spec.ts","",""
