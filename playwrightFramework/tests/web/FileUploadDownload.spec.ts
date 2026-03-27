@@ -3,7 +3,7 @@ import { DashboardPage } from '../../pages/DashboardPage';
 import { LoginPage } from '@pages/LoginPage';
 import { getEnvConfig } from '@config/envConfig';
 const config = getEnvConfig(process.env.ENV || 'qa');
-
+test.describe('File Upload and Download — OrangeHRM', () => {
   test('Upload Resume and Download Profile', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
@@ -17,3 +17,4 @@ const config = getEnvConfig(process.env.ENV || 'qa');
     await dashboardPage.logout();
     await expect(dashboardPage.page).toHaveURL(/login/);
   });
+});
