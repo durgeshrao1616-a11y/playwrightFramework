@@ -55,7 +55,7 @@ export default defineConfig({
     baseURL:           envConfig.baseUrl,
     storageState:      fs.existsSync(authFile) ? authFile : undefined,
     //storageState:      `playwright/.auth/${env}.json`,  // ✅ undefined if missing — won't crash
-    headless:          false,
+    headless:          true,
     actionTimeout:     30_000,
     navigationTimeout: 60_000,
     screenshot:        'only-on-failure',
