@@ -93,7 +93,7 @@ export class DashboardPage extends BasePage {
   await this.contactNumber.press('Tab');
 
   
-  await this.chooseFile.setInputFiles("C:\\Durgesh_Rao_Resume.docx");
+  await this.chooseFile.setInputFiles("./data/web/Durgesh_Rao_Resume.docx");
   await this.exp.click();
   await this.exp.fill('Selenium');
   await this.calendar.click();
