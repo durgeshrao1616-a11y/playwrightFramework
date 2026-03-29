@@ -44,10 +44,7 @@ export default defineConfig({
   globalSetup: './global-setup.ts',
 
   // ✅ Reporter
-  reporter: [
-    ['html', { outputFolder: 'reports/html-report', open: 'never' }],
-    ['allure-playwright'],
-  ],
+  reporter: [['allure-playwright']],
 
   outputDir: 'reports/test-results',
 
